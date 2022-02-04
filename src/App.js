@@ -34,7 +34,7 @@ function calculate(e) {
       <h3>Calculating alcohol blood level</h3>
       <div>
         <label>Weight</label>
-        <input type="number" value={weight} onChange={e => setWeight(e.target.value)}/> kg
+        <input type="number" value={weight} onChange={e => setWeight(e.target.value)}/><span> kg</span>
       </div>
       <div>
         <label>Bottles</label>
@@ -52,7 +52,7 @@ function calculate(e) {
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
-        </select> h
+        </select><span> h</span>
       </div>
       <div>
         <label>Gender</label>
@@ -62,7 +62,7 @@ function calculate(e) {
       <button>Calculate</button>
       <div>
         <h4>Alcohol blood level:</h4>
-        <output>{result.toFixed(1)} ‰</output>
+        <output>{result.toFixed(1)} <span> ‰</span></output>
       </div>
     </form>
   );
